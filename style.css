@@ -1,0 +1,57 @@
+
+* {
+    font-size: 160px;
+    color: black;
+    box-sizing: border-box
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.square {
+    min-width: 300px;
+    text-align: center;
+}
+
+.purple {
+    
+    background-color: purple
+}
+.red{
+    
+    background-color: red
+}
+.yellow {
+    
+    background-color: yellow
+}
+.green {
+    
+    background-color: green
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    body{
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto ;
+    
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+
+    body{
+        grid-template-columns: auto ;
+
+    }
+    
+}
